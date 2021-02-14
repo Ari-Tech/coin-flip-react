@@ -3,10 +3,9 @@ const CoinFlip = (props: any)=>{
     const [tossResult, SetTossResult] = useState(true);
   return (
   <>
-  <div><button onClick={()=>{
-
-  }}>Flip Coin</button></div>
-  <div>Result: <b> {tossResult?"HEADS":"TAILS"}</b></div>
+  <div>
+    <div className={"coin"} onClick={()=> SetTossResult(Math.random()<0.5)}>{tossResult?"HEADS":"TAILS"}</div>
+  </div>
   </>)
 }
 
