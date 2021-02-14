@@ -11,7 +11,7 @@ const CoinFlip = (props: any)=>{
     }
   return (
   <>
-  <div>
+  <div className={'coin-container'}>
     <div className={animate?"coin-animate":"coin"} onClick={()=> flipCoin()}>{tossResult?"HEADS":"TAILS"}</div>
   </div>
   </>)

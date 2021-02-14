@@ -19,6 +19,12 @@ code {
   100%  {transform: rotate(360deg);}
 }
 
+.coin-container{
+  width: 100%;
+  margin-left: calc(50% - 50px);
+  top: 20px;
+  position: relative;
+}
 
 .coin{
   cursor: pointer;
